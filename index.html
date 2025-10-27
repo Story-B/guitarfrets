@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Guitar Fretboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Guitar Fretboard Viewer</h1>
+    
+    <div id="tuning-controls">
+      <p>Set tuning for each string:</p>
+      
+      <label>String 6 (Low E):
+        <select class="string-tuning" data-string="6"></select>
+      </label><br>
+      
+      <label>String 5 (A):
+        <select class="string-tuning" data-string="5"></select>
+      </label><br>
+      
+      <label>String 4 (D):
+        <select class="string-tuning" data-string="4"></select>
+      </label><br>
+      
+      <label>String 3 (G):
+        <select class="string-tuning" data-string="3"></select>
+      </label><br>
+      
+      <label>String 2 (B):
+        <select class="string-tuning" data-string="2"></select>
+      </label><br>
+      
+      <label>String 1 (High E):
+        <select class="string-tuning" data-string="1"></select>
+      </label><br><br>
+      
+      <button id="apply-tuning">Apply Tuning</button>
+      <button id="flip-orientation">Flip Orientation (Left/Right Handed)</button>
+    </div>
+    
+    <div id="fretboard"></div>
+    
+    <script src="fretboard.js"></script>
+  </body>
+</html>
